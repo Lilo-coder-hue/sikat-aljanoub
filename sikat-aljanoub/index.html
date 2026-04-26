@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سكة الجنوب</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top-buttons">
+    <a href="javascript:history.back();" class="back-btn">رجوع</a>
+    <button class="dark-btn" onclick="toggleDarkMode()">🌙 ليلي</button>
+  </div>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="logo">
+      <span>سكة الجنوب</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="active">الرئيسية</a></li>
+          <li><a href="login.html">تسجيل الدخول</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#regions">مناطقنا</a></li>
+        <li><a href="#contact">الاتصال</a></li>
+      </ul>
+    </nav>
+    <div id="welcomeBox" class="welcome-box"></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>
+          "يا مرحبا ترحيبة من جبال الجنوب وسهوله، نرحب بكم في سكة الجنوب حيث الجمال يلتقي بالأصالة، وحياكم الله بين أهلكم."
+        </h1>
+        <div class="hero-line"></div>
+        <p>اكتشف أجمل الوجهات السياحية في جنوب المملكة العربية السعودية</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/hero.jpg" alt="من نحن">
+      </div>
+
+      <div class="about-text">
+        <h2>من نحن</h2>
+        <div class="about-line"></div>
+        <p>نحن في سكة الجنوب وجهتك لاكتشاف سحر جنوب المملكة، ونأخذك في رحلة بين الضباب والجبال الخضراء والقرى التراثية.</p>
+        <p>نسعى لتقديم تجربة سياحية سهلة وواضحة تساعدك على التعرف على أجمل الأماكن في عسير والباحة وجازان ونجران.</p>
+        <p>هنا تبدأ رحلتك نحو الطبيعة والهدوء والتراث والذكريات الجميلة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="regions-section" id="regions">
+    <h2 class="section-title">مناطقنا</h2>
+
+    <div class="regions-container">
+
+      <div class="region-card">
+        <img src="images/baha.jpg" alt="الباحة">
+        <div class="card-content">
+          <h3><a href="baha.html" class="region-title-link">الباحة</a></h3>
+          <ul class="province-list">
+            <li><a href="albaha-city.html">الباحة</a></li>
+            <li><a href="baljurashi.html">بلجرشي</a></li>
+            <li><a href="almakhwah.html">المخواة</a></li>
+            <li><a href="thiain.html">قرية ذي عين</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="region-card">
+        <img src="images/jazan.jpg" alt="جازان">
+        <div class="card-content">
+          <h3><a href="jazan.html" class="region-title-link">جازان</a></h3>
+          <ul class="province-list">
+            <li><a href="jazan-city.html">جازان</a></li>
+            <li><a href="sabya.html">صبيا</a></li>
+            <li><a href="abuarish.html">أبو عريش</a></li>
+            <li><a href="samtah.html">صامطة</a></li>
+            <li><a href="fayfa.html">فيفا</a></li>
+            <li><a href="farasan.html">فرسان</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="region-card">
+  <img src="images/asir.jpg" alt="عسير">
+  <div class="card-content">
+    <h3><a href="asir.html" class="region-title-link">عسير</a></h3>
+    <ul class="province-list">
+      <li><a href="abha.html">أبها</a></li>
+      <li><a href="alnamas.html">النماص</a></li>
+      <li><a href="balsamar.html">بللسمر</a></li>
+      <li><a href="tanomah.html">تنومة</a></li>
+      <li><a href="khamis.html">خميس مشيط</a></li>
+      <li><a href="rijal.html">رجال ألمع</a></li>
+      <li><a href="mahayil.html">محايل عسير</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="region-card">
+  <img src="images/najran.jpg" alt="نجران">
+  <div class="card-content">
+    <h3><a href="najran.html" class="region-title-link">نجران</a></h3>
+    <ul class="province-list">
+      <li><a href="najran-city.html">نجران</a></li>
+      <li><a href="hubuna.html">حبونا</a></li>
+      <li><a href="sharurah.html">شرورة</a></li>
+    </ul>
+  </div>
+</div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>الاتصال</h2>
+    <p>سكة الجنوب - منصة سياحية لاستكشاف جنوب المملكة العربية السعودية</p>
+  </section>
+
+  <script>
+  function toggleDarkMode(){
+    document.body.classList.toggle("dark-mode");
+  }
+
+  const username = localStorage.getItem("username");
+  const userType = localStorage.getItem("userType");
+  const welcomeBox = document.getElementById("welcomeBox");
+
+  if(username && welcomeBox){
+    if(userType === "guest"){
+      welcomeBox.innerHTML = "مرحبًا، ضيف";
+    }else{
+      welcomeBox.innerHTML = "مرحبًا، " + username;
+    }
+  }
+</script>
+<section class="ai-box">
+    <div class="chat-box">
+    <h2>المرشد السياحي</h2>
+    <input type="text" id="userMessage" placeholder="اكتب سؤالك هنا">
+    <button onclick="sendMessage()">إرسال</button>
+    <p id="botReply"></p>
+</div>
+
+<script>
+async function sendMessage() {
+    const message = document.getElementById("userMessage").value;
+    const replyBox = document.getElementById("botReply");
+
+    if (!message.trim()) {
+        replyBox.innerText = "اكتب سؤالك أول";
+        return;
+    }
+
+    replyBox.innerText = "جاري الرد...";
+
+    try {
+        const response = await fetch("http://127.0.0.1:5000/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ message: message })
+        });
+
+        const data = await response.json();
+        replyBox.innerText = data.reply;
+    } catch (error) {
+        replyBox.innerText = "صار خطأ في الاتصال بالسيرفر";
+    }
+}
+</script>
+</script>
+<script src="assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الباحة | سكة الجنوب</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-buttons">
+  <a href="javascript:history.back();" class="back-btn">رجوع</a>
+  <button class="dark-btn" onclick="toggleDarkMode()">🌙 ليلي</button>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="شعار سكة الجنوب">
+    <span>سكة الجنوب</span>
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="#" class="active">الباحة</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="city-hero" style='background:url("images/baha1.jpg") center center/cover no-repeat;'>
+  <div class="city-overlay">
+    <h1>الباحة</h1>
+    <p>مدينة الطبيعة والضباب والغابات الساحرة</p>
+  </div>
+</section>
+
+<section class="intro-section">
+  <h2 class="section-heading">اكتشف الباحة</h2>
+  <p class="intro-text">
+    الباحة واحدة من أجمل مناطق جنوب المملكة، وتتميز بطبيعتها الخضراء وأجوائها اللطيفة
+    ومعالمها السياحية المتنوعة بين المحافظات والمنتزهات والأسواق والفعاليات.
+  </p>
+</section>
+
+<section class="city-boxes">
+   <a href="albaha-city.html" class="city-card">
+  <h2>📍 الباحة</h2>
+  <p>المدينة الرئيسية في المنطقة</p>
+</a>
+
+  <a href="baljurashi.html" class="city-card">
+    <h2>📍 بلجرشي</h2>
+    <p>طبيعة ساحرة وأجواء جميلة</p>
+  </a>
+
+  <a href="almakhwah.html" class="city-card">
+    <h2>📍 المخواة</h2>
+    <p>محافظة تراثية ومميزة</p>
+  </a>
+
+  <a href="thiain.html" class="city-card">
+    <h2>📍 قرية ذي عين</h2>
+    <p>قرية تاريخية مشهورة</p>
+  </a>
+</section>
+
+<section class="baha-page">
+
+  <h2 class="main-title">مقاهي الباحة</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="Cloud Cafe">
+      <h3>Cloud Café</h3>
+      <p>كوفي بإطلالة جميلة وأجواء هادئة مناسبة للجلسات والتصوير.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Cloud+Cafe+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Mountain Brew.jpg" alt="Mountain Brew">
+      <h3>Mountain Brew</h3>
+      <p>كوفي مميز يقدم القهوة المختصة في أجواء رائعة داخل الباحة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Mountain+Brew+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Lavender Cafe.jpg" alt="Lavender Cafe">
+      <h3>Lavender Café</h3>
+      <p>جلسات مريحة وديكور أنيق ومشروبات متنوعة تناسب جميع الأذواق.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Lavender+Cafe+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+  </div>
+
+  <h2 class="main-title">حدائق الباحة</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="منتزه رغدان">
+      <h3>منتزه رغدان</h3>
+      <p>من أشهر منتزهات الباحة ويتميز بإطلالاته الجميلة وأجوائه اللطيفة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Raghadan+Forest+Park+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/khairah.jpg" alt="غابة خيرة">
+      <h3>غابة خيرة</h3>
+      <p>مكان جميل لعشاق الطبيعة والتنزه والاستمتاع بالأجواء الجبلية.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Khairah+Forest+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/hussam.jpg" alt="منتزه الأمير حسام">
+      <h3>منتزه الأمير حسام</h3>
+      <p>منتزه مناسب للعائلات ويضم جلسات ومساحات خضراء ومناظر جميلة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Prince+Hussam+Park+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+  </div>
+
+  <h2 class="main-title">فعاليات الباحة</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="مهرجان صيف الباحة">
+      <h3>مهرجان صيف الباحة</h3>
+      <p>فعاليات صيفية تشمل عروضًا ترفيهية وأنشطة متنوعة تناسب العائلات.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Al+Baha+Summer+Festival" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event2.jpg" alt="الأسواق التراثية">
+      <h3>الأسواق التراثية</h3>
+      <p>تجربة ممتعة للتعرف على المنتجات المحلية والأجواء التراثية الجميلة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Traditional+Market+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event3.jpg" alt="الفعاليات الجبلية">
+      <h3>الفعاليات الجبلية</h3>
+      <p>أنشطة خارجية وتجارب ممتعة في أجواء الباحة الجبلية الخلابة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Mountain+Activities+Al+Baha" target="_blank" class="map-btn">📍 الموقع</a>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+}
+
+function toggleFav(btn){
+  btn.classList.toggle("active");
+  btn.innerHTML = btn.classList.contains("active") ? "♥" : "♡";
+}
+</script>
+
+</body>
+</html>

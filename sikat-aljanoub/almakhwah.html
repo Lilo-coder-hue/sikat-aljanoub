@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المخواة | سكة الجنوب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-buttons">
+  <a href="javascript:history.back();" class="back-btn">رجوع</a>
+  <button class="dark-btn" onclick="toggleDarkMode()">🌙 ليلي</button>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>سكة الجنوب</span>
+  </div>
+</header>
+
+<section class="city-hero" style='background:url("images/baha.jpg") center center/cover no-repeat;'>
+  <div class="city-overlay">
+    <h1>المخواة</h1>
+    <p>محافظة جميلة تجمع بين الطبيعة والهدوء والأجواء التراثية</p>
+  </div>
+</section>
+
+<section class="intro-section">
+  <h2 class="section-heading">نبذة عن المخواة</h2>
+  <p class="intro-text">
+    المخواة من محافظات منطقة الباحة، وتشتهر بقربها من القرى التراثية والطبيعة الجبلية والأودية والمزارع، وتعد بوابة مهمة لعدد من المواقع السياحية في تهامة الباحة.
+  </p>
+</section>
+
+<section class="baha-page">
+
+  <h2 class="main-title">مقاهي المخواة</h2>
+  <div class="cards-grid">
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Valley Café</h3><p>كوفي مميز بجلسات هادئة وأجواء جميلة في المخواة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Valley+Cafe+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Palm Coffee</h3><p>مقهى أنيق يقدم القهوة المختصة ومشروبات متنوعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Palm+Coffee+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Sunset Lounge</h3><p>كوفي بإطلالة جميلة مناسب للجلسات المسائية.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Sunset+Lounge+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Makhwah Brew</h3><p>أجواء مريحة وقهوة مناسبة للجلسات الطويلة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Makhwah+Brew" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Wadi Cup</h3><p>كوفي بطابع هادئ ومكان مناسب للاسترخاء.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Wadi+Cup+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Olive Café</h3><p>جلسات أنيقة ومشروبات متنوعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Olive+Cafe+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Terrace Coffee</h3><p>إطلالة لطيفة وأجواء مميزة لمحبي القهوة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Terrace+Coffee+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Quiet Bean</h3><p>كوفي صغير بطابع مريح وهادئ.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Quiet+Bean+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Golden Roast</h3><p>قهوة مختصة مع جلسات داخلية جميلة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Golden+Roast+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Evening Brew</h3><p>أجواء مسائية جميلة ومشروبات متنوعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Evening+Brew+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+  </div>
+
+<h2 class="main-title">مطاعم المخواة</h2>
+<div class="cards-grid">
+
+<div class="place-card"><img src="images/albaik.jpg"><h3>البيك</h3><p>وجبات سريعة مشهورة.</p><a href="https://www.google.com/maps/search/?api=1&query=البيك+المخواة" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/tazaj.jpg"><h3>الطازج</h3><p>وجبات دجاج طازجة.</p><a href="https://www.google.com/maps/search/?api=1&query=الطازج+المخواة" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/herfy.jpg"><h3>هرفي</h3><p>برجر وخيارات متنوعة.</p><a href="https://www.google.com/maps/search/?api=1&query=هرفي+المخواة" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/kudu.jpg"><h3>Kudu</h3><p>مطعم معروف بوجباته السريعة.</p><a href="https://www.google.com/maps/search/?api=1&query=Kudu+Al+Makhwah" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/pizzahutjpg.jpg"><h3>Pizza Hut</h3><p>بيتزا متنوعة.</p><a href="https://www.google.com/maps/search/?api=1&query=Pizza+Hut+Al+Makhwah" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/maestro.jpg"><h3>Maestro Pizza</h3><p>بيتزا بعجينة طازجة.</p><a href="https://www.google.com/maps/search/?api=1&query=Maestro+Pizza+Al+Makhwah" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/mkyahrest.jpg"><h3>مطعم المخواة الشعبي</h3><p>أكلات شعبية محلية.</p><a href="https://www.google.com/maps/search/?api=1&query=مطعم+المخواة+الشعبي" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/srahrest.jpg"><h3>مطعم السراة</h3><p>مطعم يقدم أطباق متنوعة.</p><a href="https://www.google.com/maps/search/?api=1&query=مطعم+السراة+المخواة" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/burgerizzr.jpg"><h3>Burgerizzr</h3><p>مطعم برجر مشهور.</p><a href="https://www.google.com/maps/search/?api=1&query=Burgerizzr+Al+Makhwah" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/redan.jpg"><h3>Redan Restaurant</h3><p>مطعم عربي معروف.</p><a href="https://www.google.com/maps/search/?api=1&query=Redan+Restaurant+Al+Makhwah" class="map-btn">📍 الموقع</a></div>
+
+</div>
+
+
+  <h2 class="main-title">حدائق المخواة</h2>
+  <div class="cards-grid">
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>قرية ذي عين التراثية</h3><p>أشهر معالم المنطقة وتقع قرب المخواة. القرية مبنية على جبل رخامي وتعد من أبرز مواقع الباحة السياحية.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Thee+Ain+Village+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>جبل شدا الأسفل</h3><p>من المواقع الطبيعية المعروفة قرب المخواة ويمتاز بتكويناته الصخرية وطبيعته الجبلية.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Shadah+Al+Asfal+Mountain+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>المنتزه العام بالمخواة</h3><p>مكان مناسب للعائلات والجلسات الخارجية.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Al+Makhwah+Park" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>ممشى المخواة</h3><p>ممشى جميل للرياضة والاسترخاء.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=ممشى+المخواة" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>حديقة المخواة العامة</h3><p>حديقة مناسبة للتنزه والأجواء العائلية.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=حديقة+المخواة+العامة" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>مطل المخواة</h3><p>إطلالة جميلة على الأودية والجبال المحيطة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=مطل+المخواة" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>المنتزه الجبلي</h3><p>طبيعة جميلة ومساحات مناسبة للجلسات.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=المنتزه+الجبلي+المخواة" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>حديقة الوادي</h3><p>أجواء هادئة مناسبة للمشي والتنزه.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=حديقة+الوادي+المخواة" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>المزارع المحيطة بذي عين</h3><p>منطقة زراعية جميلة قرب القرية التاريخية.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=مزارع+ذي+عين+المخواة" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>موقع شدا السياحي</h3><p>موقع طبيعي رائع لعشاق الاستكشاف.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Shada+Tourist+Site+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+  </div>
+
+  <h2 class="main-title">فعاليات المخواة</h2>
+  <div class="cards-grid">
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>الجولات السياحية في ذي عين</h3><p>جولات لاستكشاف القرية التاريخية والمزارع المحيطة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Thee+Ain+Village+Tour" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>الأسواق الشعبية</h3><p>أجواء محلية ومنتجات تراثية.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Traditional+Market+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الرحلات الجبلية</h3><p>أنشطة خارجية وتجارب ممتعة لمحبي الطبيعة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Mountain+Trips+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>الفعاليات العائلية</h3><p>أنشطة مناسبة للعائلة والأطفال.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Family+Activities+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>الجولات التراثية</h3><p>استكشاف القرى والمواقع التاريخية.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Heritage+Tour+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الأنشطة الزراعية</h3><p>تجربة المزارع والمنتجات المحلية.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Farm+Activities+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>التصوير الطبيعي</h3><p>مواقع مميزة للتصوير والمناظر الطبيعية.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Photography+Spots+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>المهرجانات المحلية</h3><p>فعاليات اجتماعية ومحلية متنوعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Events+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الهايكنج الخفيف</h3><p>جولات مشي لطيفة في الطبيعة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Hiking+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>استكشاف شدا</h3><p>تجربة ممتعة لعشاق الجبال والمغامرة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Shada+Mountain+Trip+Al+Makhwah" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+  </div>
+
+</section>
+
+<script>
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+}
+function toggleFav(btn){
+  btn.classList.toggle("active");
+  btn.innerHTML = btn.classList.contains("active") ? "♥" : "♡";
+}
+</script>
+
+</body>
+</html>

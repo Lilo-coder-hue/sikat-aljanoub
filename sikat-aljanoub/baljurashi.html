@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بلجرشي | سكة الجنوب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-buttons">
+  <a href="javascript:history.back();" class="back-btn">رجوع</a>
+  <button class="dark-btn" onclick="toggleDarkMode()">🌙 ليلي</button>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>سكة الجنوب</span>
+  </div>
+</header>
+
+<section class="city-hero" style='background:url("images/baha.jpg") center center/cover no-repeat;'>
+  <div class="city-overlay">
+    <h1>بلجرشي</h1>
+    <p>من أجمل محافظات الباحة بطبيعة ساحرة</p>
+  </div>
+</section>
+
+<section class="intro-section">
+  <h2 class="section-heading">نبذة عن بلجرشي</h2>
+  <p class="intro-text">
+    بلجرشي من أشهر محافظات منطقة الباحة، وتتميز بالأجواء المعتدلة والطبيعة الخضراء والمواقع السياحية الجميلة.
+  </p>
+</section>
+
+<section class="baha-page">
+
+  <h2 class="main-title">مقاهي بلجرشي</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="40ML Specialty Coffee">
+      <h3>40ML Specialty Coffee</h3>
+      <p>كوفي مختص بجلسات هادئة وأجواء جميلة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=40ML+Specialty+Coffee+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Mountain Brew.jpg" alt="LABELLA Cafe">
+      <h3>LABELLA Cafe</h3>
+      <p>مقهى أنيق يقدم القهوة المختصة والمشروبات الباردة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=LABELLA+Cafe+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Lavender Cafe.jpg" alt="Bonz Cafe">
+      <h3>Bonz Cafe</h3>
+      <p>جلسات مريحة وأجواء مسائية جميلة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Bonz+Cafe+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="Riva Cafe">
+      <h3>Riva Cafe</h3>
+      <p>كوفي مناسب للجلسات الهادئة وتصوير الأجواء.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Riva+Cafe+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Mountain Brew.jpg" alt="Route Coffee">
+      <h3>Route Coffee</h3>
+      <p>مقهى عصري يقدم القهوة والحلويات الخفيفة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Route+Coffee+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Lavender Cafe.jpg" alt="Mood Cafe">
+      <h3>Mood Cafe</h3>
+      <p>أجواء مريحة وجلسات مناسبة للأصدقاء والعائلة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Mood+Cafe+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="Bean House">
+      <h3>Bean House</h3>
+      <p>كوفي صغير بطابع أنيق وقهوة مميزة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Bean+House+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Mountain Brew.jpg" alt="Mountain View Cafe">
+      <h3>Mountain View Cafe</h3>
+      <p>إطلالة جميلة وأجواء رائعة لعشاق الهدوء.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Mountain+View+Cafe+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Lavender Cafe.jpg" alt="Hill Spot Cafe">
+      <h3>Hill Spot Cafe</h3>
+      <p>كوفي بإطلالة لطيفة ومكان مناسب للاسترخاء.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Hill+Spot+Cafe+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="Evening Brew">
+      <h3>Evening Brew</h3>
+      <p>جلسات جميلة وأجواء ليلية مميزة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Evening+Brew+Baljurashi" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+  </div>
+
+
+<h2 class="main-title">مطاعم بلجرشي</h2>
+<div class="cards-grid">
+
+<div class="place-card">
+<img src="images/tazaj.jpg">
+<h3>مطعم الطازج</h3>
+<p>مطعم معروف يقدم وجبات دجاج ومناسب للعائلات.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+الطازج+بلجرشي" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/kholofajpg.jpg">
+<h3>فول خلوفة</h3>
+<p>من المطاعم الشعبية المشهورة في بلجرشي.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=فول+خلوفة+بلجرشي" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/india.jpg">
+<h3>Indian Tasty Restaurant</h3>
+<p>مطعم هندي يقدم أطباق متنوعة ومميزة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Indian+Tasty+Restaurant+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/srahrest.jpg">
+<h3>Almezhr Restaurant</h3>
+<p>مطعم يقدم وجبات عربية وشعبية.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Almezhr+Restaurant+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/pizzahutjpg.jpg">
+<h3>Pizza Hut</h3>
+<p>سلسلة عالمية للبيتزا معروفة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Pizza+Hut+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/leterr.jpg">
+<h3>Little Caesars</h3>
+<p>بيتزا سريعة وخيارات متنوعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Little+Caesars+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/maestro.jpg">
+<h3>Maestro Pizza</h3>
+<p>بيتزا بنكهات متنوعة وعجينة طازجة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Maestro+Pizza+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/srahrest.jpg">
+<h3>Al Bustan Restaurant</h3>
+<p>مطعم يقدم أطباق عربية ومشاوي.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Al+Bustan+Restaurant+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/burger65.jpg">
+<h3>Burger 65</h3>
+<p>مطعم برجر مشهور بوجباته السريعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Burger+65+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/redan.jpg">
+<h3>Redan Restaurant</h3>
+<p>مطعم يقدم أكلات عربية متنوعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Redan+Restaurant+Baljurashi" class="map-btn">📍 الموقع</a>
+</div>
+
+</div>
+
+
+
+  <h2 class="main-title">حدائق بلجرشي</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="منتزه بلجرشي الوطني">
+      <h3>منتزه بلجرشي الوطني</h3>
+      <p>منتزه جميل مناسب للعائلات والزوار.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=منتزه+بلجرشي+الوطني" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/khairah.jpg" alt="حديقة الجسر النباتية">
+      <h3>حديقة الجسر النباتية</h3>
+      <p>مساحات خضراء وأجواء لطيفة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=حديقة+الجسر+النباتية+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/hussam.jpg" alt="قرية بلجرشي التراثية">
+      <h3>قرية بلجرشي التراثية</h3>
+      <p>مكان جميل يجمع بين الطبيعة والتراث.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=قرية+بلجرشي+التراثية" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="منتزه الشكران">
+      <h3>منتزه الشكران</h3>
+      <p>منتزه بإطلالات رائعة وأجواء مناسبة للتنزه.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=منتزه+الشكران+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/khairah.jpg" alt="حديقة الأمير حسام">
+      <h3>حديقة الأمير حسام</h3>
+      <p>حديقة جميلة للجلسات العائلية والهواء الطلق.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=حديقة+الأمير+حسام+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/hussam.jpg" alt="حديقة بلجرشي العامة">
+      <h3>حديقة بلجرشي العامة</h3>
+      <p>مساحات مناسبة للتنزه والمشي والاسترخاء.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=حديقة+بلجرشي+العامة" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="مطل بلجرشي">
+      <h3>مطل بلجرشي</h3>
+      <p>إطلالة جميلة على الجبال والطبيعة المحيطة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=مطل+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/khairah.jpg" alt="ممشى بلجرشي">
+      <h3>ممشى بلجرشي</h3>
+      <p>مكان جميل للمشي والاسترخاء في الأجواء المفتوحة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=ممشى+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/hussam.jpg" alt="منتزه المرتفعات">
+      <h3>منتزه المرتفعات</h3>
+      <p>أجواء باردة ومناظر جبلية جميلة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=منتزه+المرتفعات+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="حديقة الوادي">
+      <h3>حديقة الوادي</h3>
+      <p>حديقة لطيفة مناسبة للعائلات والجلوس الخارجي.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=حديقة+الوادي+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+  </div>
+
+  <h2 class="main-title">فعاليات بلجرشي</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="واجهة بلجرشي">
+      <h3>واجهة بلجرشي</h3>
+      <p>فعاليات متنوعة للعائلات والزوار.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=واجهة+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event2.jpg" alt="سوق السبت التاريخي">
+      <h3>سوق السبت التاريخي</h3>
+      <p>منتجات محلية وأجواء جميلة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=سوق+السبت+التاريخي+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event3.jpg" alt="الجولات السياحية">
+      <h3>الجولات السياحية</h3>
+      <p>استكشاف الطبيعة والأماكن الجميلة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=بلجرشي+سياحة" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="مهرجان بلجرشي الصيفي">
+      <h3>مهرجان بلجرشي الصيفي</h3>
+      <p>فعاليات صيفية متنوعة وأنشطة ترفيهية.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=مهرجان+بلجرشي+الصيفي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event2.jpg" alt="المهرجان التراثي">
+      <h3>المهرجان التراثي</h3>
+      <p>عروض شعبية وتراثية وتجارب محلية.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=مهرجان+تراثي+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event3.jpg" alt="فعاليات الواجهة">
+      <h3>فعاليات الواجهة</h3>
+      <p>أنشطة عائلية وعروض في المساحات المفتوحة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=فعاليات+واجهة+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="العروض الشعبية">
+      <h3>العروض الشعبية</h3>
+      <p>أجواء ممتعة وعروض فنية تقليدية.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=العروض+الشعبية+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event2.jpg" alt="الأسواق الموسمية">
+      <h3>الأسواق الموسمية</h3>
+      <p>تجمعات وأسواق مؤقتة بأجواء ممتعة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=الأسواق+الموسمية+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event3.jpg" alt="فعاليات الأطفال">
+      <h3>فعاليات الأطفال</h3>
+      <p>أنشطة وألعاب ممتعة للأطفال والعائلات.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=فعاليات+الأطفال+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="الجولات الجبلية">
+      <h3>الجولات الجبلية</h3>
+      <p>تجارب ممتعة لاستكشاف طبيعة بلجرشي.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=الجولات+الجبلية+بلجرشي" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+}
+
+function toggleFav(btn){
+  btn.classList.toggle("active");
+  btn.innerHTML = btn.classList.contains("active") ? "♥" : "♡";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أبها | سكة الجنوب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-buttons">
+  <a href="javascript:history.back();" class="back-btn">رجوع</a>
+  <button class="dark-btn" onclick="toggleDarkMode()">🌙 ليلي</button>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>سكة الجنوب</span>
+  </div>
+</header>
+
+<section class="city-hero" style='background:url("images/asir.jpg") center center/cover no-repeat;'>
+  <div class="city-overlay">
+    <h1>أبها</h1>
+    <p>عاصمة عسير وأشهر مدنها السياحية</p>
+  </div>
+</section>
+
+<section class="intro-section">
+  <h2 class="section-heading">نبذة عن أبها</h2>
+  <p class="intro-text">
+    أبها من أجمل مدن المملكة العربية السعودية، وتشتهر بالأجواء المعتدلة والطبيعة الخضراء والضباب والمعالم السياحية الرائعة.
+  </p>
+</section>
+
+<section class="baha-page">
+
+  <h2 class="main-title">مقاهي أبها</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="د.كيف">
+      <h3>د.كيف</h3>
+      <p>مقهى معروف بالقهوة المختصة والأجواء الهادئة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Dr+Cafe+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Mountain Brew.jpg" alt="بارنز">
+      <h3>بارنز</h3>
+      <p>خيار مناسب لعشاق القهوة السريعة والجلسات الخفيفة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Barns+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Lavender Cafe.jpg" alt="ستاربكس">
+      <h3>ستاربكس</h3>
+      <p>مقهى عالمي معروف بفروعه المتعددة في أبها.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Starbucks+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="دوز">
+      <h3>دوز كافيه</h3>
+      <p>أجواء عصرية وقهوة مختصة وجلسات مريحة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Dose+Cafe+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Mountain Brew.jpg" alt="هاف مليون">
+      <h3>هاف مليون</h3>
+      <p>مقهى مشهور بالقهوة الباردة والحارة والحلويات.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Half+Million+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Lavender Cafe.jpg" alt="كيان">
+      <h3>كيان كافيه</h3>
+      <p>مقهى مناسب للمشروبات السريعة والقهوة اليومية.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Keyan+Cafe+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="أرومة">
+      <h3>أرومة كافيه</h3>
+      <p>جلسات جميلة وقهوة بطابع محلي مميز.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Aroma+Cafe+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Mountain Brew.jpg" alt="مقهى السحاب">
+      <h3>مقهى السحاب</h3>
+      <p>أجواء مرتفعات وإطلالة مميزة في أبها.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D9%87%D9%89+%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Lavender Cafe.jpg" alt="فرنش كافيه">
+      <h3>فرنش كافيه</h3>
+      <p>جلسات أنيقة ومشروبات متنوعة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=French+Cafe+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/Cloud Cafe.jpg" alt="كافيه المطل">
+      <h3>كافيه المطل</h3>
+      <p>جلسات خارجية وإطلالة جميلة على المدينة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%83%D8%A7%D9%81%D9%8A%D9%87+%D8%A7%D9%84%D9%85%D8%B7%D9%84+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+  </div>
+
+
+<h2 class="main-title">مطاعم أبها</h2>
+<div class="cards-grid">
+
+<div class="place-card">
+<img src="images/waharest.jpg">
+<h3>مطعم السنارة</h3>
+<p>مطعم مشهور يقدم المأكولات البحرية في أبها.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+السنارة+أبها" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/shawa.jpg">
+<h3>مطعم شواية الخليج</h3>
+<p>مطعم معروف بالدجاج المشوي والوجبات السريعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=شواية+الخليج+أبها" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/herfy.jpg">
+<h3>مطعم هرفي</h3>
+<p>سلسلة مطاعم مشهورة بوجبات البرجر.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=هرفي+أبها" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/tazaj.jpg">
+<h3>مطعم الطازج</h3>
+<p>مطعم يقدم وجبات دجاج طازجة ومميزة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=الطازج+أبها" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/maestro.jpg">
+<h3>Maestro Pizza</h3>
+<p>بيتزا متنوعة بعجينة طازجة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Maestro+Pizza+Abha" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/pizzahutjpg.jpg">
+<h3>Pizza Hut</h3>
+<p>سلسلة عالمية تقدم البيتزا.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Pizza+Hut+Abha" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/kudu.jpg">
+<h3>Kudu</h3>
+<p>مطعم وجبات سريعة معروف في السعودية.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Kudu+Abha" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/turkish.jpg">
+<h3>مطعم مذاق تركي</h3>
+<p>مطعم يقدم الأكلات التركية والمشاوي.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+تركي+أبها" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/burgerizzr.jpg">
+<h3>Burgerizzr</h3>
+<p>مطعم برجر مشهور بخياراته المتنوعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Burgerizzr+Abha" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/redan.jpg">
+<h3>Redan Restaurant</h3>
+<p>مطعم يقدم أكلات عربية متنوعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Redan+Restaurant+Abha" class="map-btn">📍 الموقع</a>
+</div>
+
+</div>
+
+  <h2 class="main-title">حدائق أبها</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="حديقة أبو خيال">
+      <h3>حديقة أبو خيال</h3>
+      <p>من أشهر حدائق أبها بإطلالات جميلة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Abu+Khayal+Park+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/khairah.jpg" alt="منتزه السودة">
+      <h3>منتزه السودة</h3>
+      <p>وجهة طبيعية رائعة لعشاق الجبال والضباب.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Al+Soudah+Park+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/hussam.jpg" alt="منتزه عسير الوطني">
+      <h3>منتزه عسير الوطني</h3>
+      <p>منتزه طبيعي واسع ومشهور في المنطقة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Asir+National+Park" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="حديقة الأندلس">
+      <h3>حديقة الأندلس</h3>
+      <p>حديقة جميلة مناسبة للعائلات والجلسات.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%AD%D8%AF%D9%8A%D9%82%D8%A9+%D8%A7%D9%84%D8%A3%D9%86%D8%AF%D9%84%D8%B3+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/khairah.jpg" alt="حديقة المطار">
+      <h3>حديقة المطار</h3>
+      <p>مساحات مناسبة للتنزه والمشي.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%AD%D8%AF%D9%8A%D9%82%D8%A9+%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B1+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/hussam.jpg" alt="حديقة الشلال">
+      <h3>حديقة الشلال</h3>
+      <p>مكان جميل ومنعش بإطلالة لطيفة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Waterfall+Park+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="منتزه الحبلة">
+      <h3>منتزه الحبلة</h3>
+      <p>من المعالم السياحية المشهورة بالقرب من أبها.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Al+Habala+Park+Abha" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/khairah.jpg" alt="منتزه دلغان">
+      <h3>منتزه دلغان</h3>
+      <p>طبيعة جميلة وأجواء مناسبة للعائلة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%85%D9%86%D8%AA%D8%B2%D9%87+%D8%AF%D9%84%D8%BA%D8%A7%D9%86+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/hussam.jpg" alt="مطل أبها">
+      <h3>مطل أبها</h3>
+      <p>إطلالة بانورامية على المدينة والجبال.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B7%D9%84+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/ragdan.jpg" alt="ممشى الضباب">
+      <h3>ممشى الضباب</h3>
+      <p>ممشى رائع في أجواء باردة ولطيفة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%85%D9%85%D8%B4%D9%89+%D8%A7%D9%84%D8%B6%D8%A8%D8%A7%D8%A8+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+  </div>
+
+  <h2 class="main-title">فعاليات أبها</h2>
+  <div class="cards-grid">
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="موسم عسير">
+      <h3>موسم عسير</h3>
+      <p>فعاليات ترفيهية وثقافية متنوعة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Asir+Season" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event2.jpg" alt="الأسواق الشعبية">
+      <h3>الأسواق الشعبية</h3>
+      <p>منتجات محلية وأجواء تراثية جميلة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%A7%D9%82+%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A%D8%A9+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event3.jpg" alt="الأنشطة الجبلية">
+      <h3>الأنشطة الجبلية</h3>
+      <p>رحلات وتجارب ممتعة لمحبي الطبيعة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A3%D9%86%D8%B4%D8%B7%D8%A9+%D8%A7%D9%84%D8%AC%D8%A8%D9%84%D9%8A%D8%A9+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="مهرجان أبها">
+      <h3>مهرجان أبها</h3>
+      <p>فعاليات صيفية وعروض للعائلات والزوار.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event2.jpg" alt="القرية التراثية">
+      <h3>القرية التراثية</h3>
+      <p>تجارب محلية وعروض شعبية جميلة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%D8%A9+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event3.jpg" alt="فعاليات السودة">
+      <h3>فعاليات السودة</h3>
+      <p>أنشطة خارجية وأجواء جبال مميزة.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A9" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="العروض الشعبية">
+      <h3>العروض الشعبية</h3>
+      <p>فنون شعبية وعروض محلية ممتعة.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B6+%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A%D8%A9+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event2.jpg" alt="الجولات السياحية">
+      <h3>الجولات السياحية</h3>
+      <p>استكشاف المعالم والطبيعة في أبها.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%AC%D9%88%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%8A%D8%A9+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event3.jpg" alt="فعاليات الأطفال">
+      <h3>فعاليات الأطفال</h3>
+      <p>أنشطة ممتعة ومناسبة للعائلات.</p>
+      <div class="rating">★★★★☆</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+    <div class="place-card">
+      <button class="fav-btn" onclick="toggleFav(this)">♡</button>
+      <img src="images/event1.jpg" alt="الفعاليات الثقافية">
+      <h3>الفعاليات الثقافية</h3>
+      <p>أنشطة ثقافية ومعارض ومشاركات مجتمعية.</p>
+      <div class="rating">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D9%8A%D8%A9+%D8%A3%D8%A8%D9%87%D8%A7" class="map-btn" target="_blank">📍 الموقع</a>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+function toggleDarkMode(){
+document.body.classList.toggle("dark-mode");
+}
+
+function toggleFav(btn){
+btn.classList.toggle("active");
+btn.innerHTML = btn.classList.contains("active") ? "♥" : "♡";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فيفا | سكة الجنوب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-buttons">
+  <a href="javascript:history.back();" class="back-btn">رجوع</a>
+  <button class="dark-btn" onclick="toggleDarkMode()">🌙 ليلي</button>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>سكة الجنوب</span>
+  </div>
+</header>
+
+<section class="city-hero" style='background:url("images/jazan.jpg") center center/cover no-repeat;'>
+  <div class="city-overlay">
+    <h1>فيفا</h1>
+    <p>جبال ساحرة ومناظر خلابة</p>
+  </div>
+</section>
+
+<section class="intro-section">
+  <h2 class="section-heading">نبذة عن فيفا</h2>
+  <p class="intro-text">
+    فيفا من أجمل محافظات جازان، وتشتهر بجبالها المدرجة وضبابها ومناظرها الطبيعية الساحرة، وتعد من أبرز الوجهات الجبلية في الجنوب.
+  </p>
+</section>
+
+<section class="baha-page">
+
+  <h2 class="main-title">مقاهي فيفا</h2>
+  <div class="cards-grid">
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Fayfa View</h3><p>كوفي بإطلالة جبلية رائعة وأجواء هادئة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+View+Cafe" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Mountain Café</h3><p>مقهى أنيق يقدم القهوة المختصة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Mountain+Cafe+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Cloud Cup</h3><p>جلسات رائعة وأجواء مسائية جميلة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Cloud+Cup+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Hill Spot</h3><p>كوفي بطابع جبلي ومكان مريح.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Hill+Spot+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Mist Lounge</h3><p>جلسات جميلة وسط أجواء الضباب.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Mist+Lounge+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Peak Coffee</h3><p>قهوة مختصة بإطلالة مميزة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Peak+Coffee+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Terrace Brew</h3><p>جلسات خارجية جميلة وسط الطبيعة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Terrace+Brew+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Valley Bean</h3><p>أجواء لطيفة ومكان هادئ.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Valley+Bean+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Golden Roast</h3><p>كوفي مريح ومناسب للأصدقاء.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Golden+Roast+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Night Bean</h3><p>جلسات مسائية وأجواء مميزة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Night+Bean+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+  </div>
+
+  <h2 class="main-title">مطاعم فيفا</h2>
+<div class="cards-grid">
+
+<div class="place-card">
+<img src="images/waharest.jpg">
+<h3>مطعم ريف فيفاء</h3>
+<p>من أشهر مطاعم فيفا بإطلالة جبلية جميلة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+ريف+فيفاء" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/jabalrest.jpg">
+<h3>مطعم جوهرة الجبل</h3>
+<p>مطعم عربي معروف وأجواء رائعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+جوهرة+الجبل+فيفا" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/mkyahrest.jpg">
+<h3>مطعم لذة الوادي</h3>
+<p>مطعم جميل يقدم أطباق متنوعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+لذة+الوادي+فيفا" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/srahrest.jpg">
+<h3>مطعم أطيب فيفا</h3>
+<p>وجبات شعبية ومميزة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Atayb+Faifa+Restaurant" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/srahrest.jpg">
+<h3>مطعم جبال فيفا</h3>
+<p>مطعم معروف بإطلالته الجميلة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Mountains+Restaurant" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/reef.jpg">
+<h3>مطعم ومقهى ريف وكيف</h3>
+<p>مطعم ومقهى بجلسات رائعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+ومقهى+ريف+وكيف+فيفا" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/jabalrest.jpg">
+<h3>Farm Restaurant</h3>
+<p>مطعم جميل وسط الطبيعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Farm+Restaurant+Fayfa" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/bdeea.jpg">
+<h3>مطعم بديع فيفا</h3>
+<p>أكلات شعبية محلية.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+بديع+فيفا" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/pizzahutjpg.jpg">
+<h3>بيتزا لاند</h3>
+<p>بيتزا ووجبات سريعة.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Pizza+Land+Fayfa" class="map-btn">📍 الموقع</a>
+</div>
+
+<div class="place-card">
+<img src="images/redan.jpg">
+<h3>مطعم مندي</h3>
+<p>مندي وأرز وأطباق شعبية.</p>
+<a href="https://www.google.com/maps/search/?api=1&query=مطعم+مندي+فيفا" class="map-btn">📍 الموقع</a>
+</div>
+
+</div>
+
+  <h2 class="main-title">حدائق ومعالم فيفا</h2>
+  <div class="cards-grid">
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>جبال فيفا</h3><p>أشهر معالم فيفا وتشتهر بالمدرجات الزراعية والإطلالات الجميلة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Mountains" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>المطل الجبلي</h3><p>إطلالة بانورامية على الجبال والضباب.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Viewpoint" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>المنتزه الجبلي</h3><p>مكان رائع للتنزه والاستمتاع بالطبيعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Mountain+Park+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>ممشى فيفا</h3><p>ممشى لطيف في أجواء باردة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Walkway" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>المدرجات الزراعية</h3><p>من أشهر المشاهد الطبيعية في فيفا.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Terraces" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>حديقة فيفا</h3><p>حديقة عامة مناسبة للعائلات.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Park" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>المرتفعات العليا</h3><p>إطلالات خلابة في أعلى الجبال.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Highlands+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>مزارع فيفا</h3><p>مشاهد زراعية جميلة وسط الجبال.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Farms" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>موقع التصوير البانورامي</h3><p>أفضل مكان لالتقاط صور الجبال.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Panoramic+View+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>الوادي الأخضر</h3><p>مكان جميل لمن يحب الطبيعة الهادئة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Green+Valley+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+  </div>
+
+  <h2 class="main-title">فعاليات فيفا</h2>
+  <div class="cards-grid">
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>مهرجان فيفا</h3><p>فعاليات متنوعة للعائلات والزوار.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Fayfa+Festival" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>الفعاليات الجبلية</h3><p>أنشطة ممتعة لمحبي الطبيعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Mountain+Activities+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الجولات السياحية</h3><p>استكشاف الجبال والطبيعة الساحرة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Tourist+Tours+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>العروض الشعبية</h3><p>فعاليات محلية بطابع جميل.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Folk+Shows+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>فعاليات العائلة</h3><p>أنشطة مناسبة للعائلة والأطفال.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Family+Activities+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الهايكنج الخفيف</h3><p>جولات مشي واستكشاف في الطبيعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Hiking+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>فعاليات التصوير</h3><p>مواقع مميزة لمحبي التصوير.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Photography+Spots+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>الفعاليات المفتوحة</h3><p>أنشطة خارجية وأجواء لطيفة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Open+Activities+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الأنشطة الزراعية</h3><p>استكشاف المزارع والمدرجات.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Farm+Activities+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>رحلات اليوم الواحد</h3><p>زيارة ممتعة لاكتشاف أبرز المعالم.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Day+Trip+Fayfa" class="map-btn" target="_blank">📍 الموقع</a></div>
+  </div>
+
+</section>
+
+<script>
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+}
+function toggleFav(btn){
+  btn.classList.toggle("active");
+  btn.innerHTML = btn.classList.contains("active") ? "♥" : "♡";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,896 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+body{
+font-family:'Tajawal',sans-serif;
+  background:#f4f4f4;
+  color:#333;
+  direction:rtl;
+  font-weight:300;
+}
+
+/* الهيدر */
+.navbar{
+  background:#f2f2f2;
+  padding:18px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:32px;
+font-weight:bold;
+color:#333;
+}
+
+.logo img{
+width:75px;
+height:75px;
+object-fit:contain;
+background:white;
+padding:6px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#222;
+  font-size:18px;
+  font-weight:600;
+  position:relative;
+  transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+  color:#2f5d50;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after{
+  content:"";
+  position:absolute;
+  right:0;
+  bottom:-6px;
+  width:100%;
+  height:3px;
+  background:#2f5d50;
+  border-radius:10px;
+}
+
+/* البداية */
+.hero{
+  height:75vh;
+  background:url("images/hero.jpg") center center/cover no-repeat;
+}
+
+.hero-overlay{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.30);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero-content{
+  max-width:900px;
+  color:#fff;
+}
+
+.hero-content h1{
+  font-size:30px;
+  line-height:1.9;
+  text-shadow:2px 2px 8px rgba(0,0,0,.45);
+}
+
+.hero-line{
+  width:110px;
+  height:5px;
+  background:#d7f0ef;
+  margin:22px auto;
+  border-radius:10px;
+}
+
+.hero-content p{
+  font-size:18px;
+}
+
+/* من نحن */
+.about{
+  padding:70px 30px;
+  background:#f7f7f7;
+}
+
+.about-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+  max-width:1300px;
+  margin:auto;
+}
+
+.about-image img{
+  width:260px;
+  height:420px;
+  object-fit:cover;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.about-text{
+  background:#ededed;
+  padding:35px;
+  max-width:700px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.about-text h2{
+  font-size:38px;
+  margin-bottom:10px;
+  color:#444;
+}
+
+.about-line{
+  width:70px;
+  height:4px;
+  background:#9ec8bf;
+  margin-bottom:20px;
+}
+
+.about-text p{
+  font-size:18px;
+  line-height:2;
+  margin-bottom:18px;
+}
+
+/* المناطق */
+.regions-section{
+padding:70px 20px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.section-title{
+font-size:34px;
+margin-bottom:35px;
+}
+
+.regions-container{
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.region-card{
+width:100%;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+text-decoration:none;
+color:inherit;
+}
+
+.region-card:hover{
+transform:translateY(-8px);
+box-shadow:0 14px 25px rgba(0,0,0,.12);
+}
+
+.region-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+display:block;
+}
+
+.card-content{
+padding:18px;
+}
+
+.card-content h3{
+font-size:26px;
+margin-bottom:15px;
+}
+
+.card-content ul{
+list-style:none;
+padding:0;
+}
+
+.card-content ul li{
+background:#eef7f3;
+margin-bottom:8px;
+padding:8px;
+border-radius:10px;
+font-size:15px;
+}
+/* التواصل */
+.contact{
+  background:#2f5d50;
+  color:#fff;
+  text-align:center;
+  padding:45px 20px;
+}
+
+.contact h2{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.contact p{
+  font-size:17px;
+}
+
+/* حركة */
+@keyframes floatCard{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-6px);}
+  100%{transform:translateY(0);}
+}
+
+/* الجوال */
+@media(max-width:768px){
+  .navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:15px;
+  }
+
+  .logo{
+    font-size:28px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .nav-links a{
+    font-size:16px;
+  }
+
+  .hero{
+    height:60vh;
+  }
+
+  .hero-content h1{
+    font-size:22px;
+  }
+
+  .hero-content p{
+    font-size:16px;
+  }
+
+  .about-text h2{
+    font-size:30px;
+  }
+
+  .about-text p{
+    font-size:16px;
+  }
+
+  .about-image img{
+    width:220px;
+    height:340px;
+  }
+
+  .region-card{
+    width:90%;
+    max-width:320px;
+    text-decoration:none;
+color:inherit;
+  }
+}/* صفحة المدن */
+.city-hero{
+height:65vh;
+background:url("images/baha1.jpg") center center/cover no-repeat;
+position:relative;
+}
+
+.city-overlay{
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.city-overlay h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.city-overlay p{
+font-size:24px;
+}
+
+.city-boxes{
+padding:70px 20px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+background:#f5f5f5;
+}
+
+.city-card{
+width:280px;
+background:white;
+padding:35px 25px;
+border-radius:18px;
+text-decoration:none;
+color:#333;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+text-align:center;
+}
+
+.city-card:hover{
+transform:translateY(-10px);
+box-shadow:0 14px 25px rgba(0,0,0,.14);
+}
+
+.city-card h2{
+font-size:28px;
+margin-bottom:15px;
+color:#2f5d50;
+}
+
+.city-card p{
+font-size:18px;
+line-height:1.8;
+}
+@media(max-width:992px){
+.regions-container{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.regions-container{
+grid-template-columns:1fr;
+}
+}
+.places-list{
+list-style:none;
+padding:0;
+margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+}
+
+.places-list li{
+margin:0;
+}
+
+.places-list li a{
+display:inline-block;
+background:#eef7f3;
+padding:10px 18px;
+border-radius:12px;
+text-decoration:none;
+color:#333;
+font-size:18px;
+transition:.3s;
+min-width:120px;
+text-align:center;
+}
+
+.places-list li a:hover{
+background:#dcebe6;
+transform:translateY(-3px);
+}.places-list{
+list-style:none;
+padding:0;
+margin-top:15px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+}
+
+.places-list li{
+margin:0;
+}
+
+.places-list li a{
+display:block;
+background:#eef7f3;
+padding:12px;
+border-radius:12px;
+text-decoration:none;
+color:#333;
+font-size:18px;
+transition:.3s;
+text-align:center;
+}
+
+.places-list li a:hover{
+background:#dcebe6;
+transform:translateY(-3px);
+}
+.cards-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.place-card{
+background:white;
+border-radius:18px;
+padding:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+text-align:center;
+transition:.3s;
+max-width:280px;
+margin:auto;
+position:relative;
+}
+
+.place-card:hover{
+transform:translateY(-8px);
+box-shadow:0 14px 28px rgba(0,0,0,0.14);
+}
+
+.place-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:14px;
+margin-bottom:12px;
+display:block;
+}
+.fav-btn{
+position:absolute;
+top:18px;
+left:18px;
+width:42px;
+height:42px;
+border:none;
+border-radius:50%;
+background:rgba(255,255,255,0.95);
+box-shadow:0 6px 14px rgba(0,0,0,0.12);
+font-size:24px;
+color:#e85d75;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:0.3s;
+z-index:2;
+}
+.fav-btn.active{
+background:#ffe8ee;
+color:#e63946;
+transform:scale(1.08);
+}
+.fav-btn:hover{
+transform:scale(1.08);
+background:#ffe8ee;
+box-shadow:0 8px 18px rgba(0,0,0,0.16);
+}
+
+.map-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+margin-top:10px;
+padding:10px 16px;
+background:linear-gradient(135deg,#2f5d50,#3f7a66);
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-size:16px;
+font-weight:500;
+box-shadow:0 6px 14px rgba(47,93,80,0.22);
+transition:0.3s;
+}
+
+.map-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 18px rgba(47,93,80,0.28);
+background:linear-gradient(135deg,#24483e,#2f5d50);
+}
+
+.place-card{
+position:relative;
+}
+.back-btn{
+position:fixed;
+top:20px;
+left:20px;
+background:white;
+color:#2f5d50;
+text-decoration:none;
+padding:10px 18px;
+border-radius:12px;
+font-size:18px;
+font-weight:600;
+box-shadow:0 6px 14px rgba(0,0,0,0.12);
+transition:.3s;
+z-index:9999;
+}
+
+.back-btn:hover{
+background:#2f5d50;
+color:white;
+transform:translateY(-3px);
+}
+.top-buttons{
+position: fixed;
+top: 20px;
+left: 20px;
+display: flex;
+gap: 15px;      /* المسافة بين الأزرار */
+z-index: 999;
+align-items: center;
+}
+
+.back-btn,
+.dark-btn{
+display:inline-flex !important;
+align-items:center;
+justify-content:center;
+white-space:nowrap;
+background:white;
+color:#2f5d50;
+padding:10px 16px;
+border:none;
+border-radius:14px;
+text-decoration:none;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 6px 14px rgba(0,0,0,0.15);
+transition:.3s;
+width:auto !important;
+}
+.back-btn,
+.dark-btn{
+background:white;
+color:#2f5d50;
+padding:12px 18px;
+border:none;
+border-radius:14px;
+text-decoration:none;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 6px 14px rgba(0,0,0,0.15);
+transition:.3s;
+}
+
+.back-btn:hover,
+.dark-btn:hover{
+background:#2f5d50;
+color:white;
+}
+
+.dark-mode{
+background:#121212 !important;
+color:white !important;
+}
+
+.dark-mode .navbar,
+.dark-mode .place-card,
+.dark-mode .city-card,
+.dark-mode .about-text{
+background:#1e1e1e !important;
+color:white !important;
+}
+
+.dark-mode a{
+color:white !important;
+}
+.province-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.province-list li{
+margin-bottom:8px;
+}
+
+.province-list li a{
+display:block;
+background:#eef7f3;
+padding:8px;
+border-radius:10px;
+text-decoration:none;
+color:#333;
+font-size:15px;
+transition:.3s;
+text-align:center;
+}
+
+.province-list li a:hover{
+background:#dcebe6;
+transform:translateY(-2px);
+}
+
+.region-title-link{
+text-decoration:none;
+color:inherit;
+}
+
+.region-title-link:hover{
+color:#2f5d50;
+}
+.intro-section{
+padding:50px 20px 20px;
+text-align:center;
+background:#f7f7f7;
+}
+
+.section-heading{
+font-size:34px;
+color:#2f5d50;
+margin-bottom:15px;
+}
+
+.intro-text{
+max-width:850px;
+margin:auto;
+font-size:20px;
+line-height:2;
+color:#555;
+}
+
+.city-boxes{
+padding:40px 20px 60px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+background:#f7f7f7;
+}
+
+.city-card{
+width:250px;
+background:white;
+padding:28px 20px;
+border-radius:18px;
+text-decoration:none;
+color:#333;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:.3s;
+text-align:center;
+}
+
+.city-card:hover{
+transform:translateY(-8px);
+box-shadow:0 14px 25px rgba(0,0,0,0.14);
+}
+
+.city-card h2{
+font-size:26px;
+margin-bottom:12px;
+color:#2f5d50;
+}
+
+.city-card p{
+font-size:17px;
+line-height:1.8;
+}
+.region-title-link{
+text-decoration:none;
+color:inherit;
+}
+
+.province-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.province-list li{
+margin:8px 0;
+}
+
+.province-list a{
+text-decoration:none;
+color:#333;
+display:block;
+background:#eef4f1;
+padding:10px;
+border-radius:10px;
+transition:.3s;
+}
+
+.province-list a:hover{
+background:#dbe8e2;
+} 
+.login-link{
+  background:#2f5d50;
+  color:white;
+  padding:10px 15px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.login-link:hover{
+  background:#24483e;
+}
+.welcome-box{
+  background:#2f5d50;
+  color:white;
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:15px;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+.ai-box{
+max-width:600px;
+margin:60px auto;
+padding:30px;
+background:#ffffff;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.ai-box h2{
+margin-bottom:20px;
+font-size:28px;
+color:#0f766e;
+}
+
+.ai-box input{
+width:80%;
+padding:14px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+margin-bottom:15px;
+}
+
+.ai-box button{
+padding:12px 25px;
+border:none;
+background:#0f766e;
+color:white;
+border-radius:12px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.ai-box button:hover{
+background:#115e59;
+}
+
+#assistantReply{
+margin-top:20px;
+font-size:18px;
+color:#333;
+font-weight:500;
+}
+.chat-box {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.chat-box h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.chat-box input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.chat-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #2e8b57;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.chat-box button:hover {
+    background: #256f46;
+}
+
+#botReply {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}.chat-box {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.chat-box h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.chat-box input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.chat-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #2e8b57;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.chat-box button:hover {
+    background: #256f46;
+}
+
+#botReply {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}

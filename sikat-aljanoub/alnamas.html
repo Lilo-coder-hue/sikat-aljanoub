@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>النماص | سكة الجنوب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-buttons">
+  <a href="javascript:history.back();" class="back-btn">رجوع</a>
+  <button class="dark-btn" onclick="toggleDarkMode()">🌙 ليلي</button>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>سكة الجنوب</span>
+  </div>
+</header>
+
+<section class="city-hero" style='background:url("images/asir.jpg") center center/cover no-repeat;'>
+  <div class="city-overlay">
+    <h1>النماص</h1>
+    <p>مدينة باردة وطبيعة ساحرة</p>
+  </div>
+</section>
+
+<section class="intro-section">
+  <h2 class="section-heading">نبذة عن النماص</h2>
+  <p class="intro-text">
+    النماص من أجمل مدن عسير، وتتميز بالأجواء الباردة والمرتفعات والضباب والمناظر الطبيعية الخلابة، وتعد من أبرز وجهات الصيف في الجنوب.
+  </p>
+</section>
+
+<section class="baha-page">
+
+  <h2 class="main-title">مقاهي النماص</h2>
+  <div class="cards-grid">
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Namas Café</h3><p>كوفي جميل بإطلالة جبلية رائعة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Namas+Cafe" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Mountain Brew</h3><p>مقهى أنيق يقدم القهوة المختصة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Mountain+Brew+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Fog Cup</h3><p>جلسات جميلة وأجواء هادئة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Fog+Cup+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Peak Coffee</h3><p>كوفي بطابع جبلي ومكان مريح.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Peak+Coffee+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Mist Lounge</h3><p>جلسات جميلة وسط الأجواء الباردة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Mist+Lounge+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Terrace Bean</h3><p>إطلالة لطيفة وقهوة متنوعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Terrace+Bean+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Cloud Roast</h3><p>أجواء ضبابية رائعة وقهوة مميزة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Cloud+Roast+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Mountain Brew.jpg"><h3>Valley Cup</h3><p>كوفي هادئ مناسب للأصدقاء.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Valley+Cup+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Lavender Cafe.jpg"><h3>Evening Brew</h3><p>جلسات مسائية وأجواء جميلة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Evening+Brew+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/Cloud Cafe.jpg"><h3>Green Spot</h3><p>مقهى صغير بطابع مريح.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Green+Spot+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+  </div>
+
+<h2 class="main-title">مطاعم النماص</h2>
+<div class="cards-grid">
+
+<div class="place-card"><img src="images/jabalrest.jpg"><h3>مطعم النماص الشعبي</h3><p>أكلات شعبية وأجواء محلية جميلة.</p><a href="https://www.google.com/maps/search/?api=1&query=مطعم+النماص+الشعبي" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/tazaj.jpg"><h3>الطازج</h3><p>وجبات دجاج سريعة ومميزة.</p><a href="https://www.google.com/maps/search/?api=1&query=الطازج+النماص" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/herfy.jpg"><h3>هرفي</h3><p>وجبات برجر متنوعة.</p><a href="https://www.google.com/maps/search/?api=1&query=هرفي+النماص" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/burger65.jpg"><h3>Kudu</h3><p>مطعم معروف بوجباته السريعة.</p><a href="https://www.google.com/maps/search/?api=1&query=Kudu+Al+Namas" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/pizzahutjpg.jpg"><h3>Pizza Hut</h3><p>بيتزا وخيارات متعددة.</p><a href="https://www.google.com/maps/search/?api=1&query=Pizza+Hut+Al+Namas" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/maestro.jpg"><h3>Maestro Pizza</h3><p>بيتزا بعجينة طازجة.</p><a href="https://www.google.com/maps/search/?api=1&query=Maestro+Pizza+Al+Namas" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/srahrest.jpg"><h3>مطعم الريف</h3><p>أكلات متنوعة في أجواء جميلة.</p><a href="https://www.google.com/maps/search/?api=1&query=مطعم+الريف+النماص" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/waharest.jpg"><h3>مطعم الجبل</h3><p>إطلالة جميلة وأطباق متنوعة.</p><a href="https://www.google.com/maps/search/?api=1&query=مطعم+الجبل+النماص" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/redan.jpg"><h3>Redan Restaurant</h3><p>مطعم عربي معروف.</p><a href="https://www.google.com/maps/search/?api=1&query=Redan+Restaurant+Al+Namas" class="map-btn">📍 الموقع</a></div>
+
+<div class="place-card"><img src="images/mkyahrest.jpg"><h3>مطعم السحاب</h3><p>مطعم جميل في أجواء باردة.</p><a href="https://www.google.com/maps/search/?api=1&query=مطعم+السحاب+النماص" class="map-btn">📍 الموقع</a></div>
+
+</div>
+
+
+
+  <h2 class="main-title">حدائق ومعالم النماص</h2>
+  <div class="cards-grid">
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>منتزه النماص</h3><p>منتزه جميل مناسب للعائلات.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=منتزه+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>الحديقة الجبلية</h3><p>مساحات خضراء وإطلالات رائعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=الحديقة+الجبلية+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>المطل الأخضر</h3><p>مكان جميل للاستمتاع بالطبيعة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=المطل+الأخضر+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>متحف النماص</h3><p>معلم ثقافي وتراثي معروف في المدينة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Al+Namas+Museum" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>ممشى النماص</h3><p>ممشى لطيف للرياضة والاسترخاء.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=ممشى+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>حديقة النماص العامة</h3><p>حديقة مناسبة للأطفال والعائلات.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=حديقة+النماص+العامة" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>المرتفعات العليا</h3><p>إطلالات بانورامية جميلة على الجبال.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=مرتفعات+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/khairah.jpg"><h3>حديقة الوادي</h3><p>مكان مناسب للجلوس والمشي.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=حديقة+الوادي+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/hussam.jpg"><h3>مطل السحاب</h3><p>منطقة جميلة وقت الضباب والبرد.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=مطل+السحاب+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/ragdan.jpg"><h3>المنتزه المفتوح</h3><p>أجواء لطيفة ومناظر جميلة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=المنتزه+المفتوح+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+  </div>
+
+  <h2 class="main-title">فعاليات النماص</h2>
+  <div class="cards-grid">
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>مهرجان النماص</h3><p>فعاليات متنوعة للعائلات والزوار.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=مهرجان+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>الفعاليات الصيفية</h3><p>أنشطة ممتعة في أجواء رائعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=الفعاليات+الصيفية+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الجولات الجبلية</h3><p>استكشاف الطبيعة والمرتفعات.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=الجولات+الجبلية+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>العروض الشعبية</h3><p>أجواء تراثية وعروض محلية جميلة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=العروض+الشعبية+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>فعاليات الأطفال</h3><p>أنشطة مناسبة للصغار والعائلات.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=فعاليات+الأطفال+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>الهايكنج الخفيف</h3><p>تجربة ممتعة لمحبي المشي والطبيعة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=Hiking+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>الفعاليات الثقافية</h3><p>أنشطة ثقافية ومجتمعية متنوعة.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=الفعاليات+الثقافية+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event2.jpg"><h3>الجولات السياحية</h3><p>زيارة أبرز المعالم في المدينة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=الجولات+السياحية+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event3.jpg"><h3>رحلات اليوم الواحد</h3><p>زيارة قصيرة وممتعة لاكتشاف النماص.</p><div class="rating">★★★★★</div><a href="https://www.google.com/maps/search/?api=1&query=Day+Trip+Al+Namas" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+    <div class="place-card"><button class="fav-btn" onclick="toggleFav(this)">♡</button><img src="images/event1.jpg"><h3>الأنشطة المفتوحة</h3><p>فعاليات خارجية بأجواء جميلة.</p><div class="rating">★★★★☆</div><a href="https://www.google.com/maps/search/?api=1&query=الأنشطة+المفتوحة+النماص" class="map-btn" target="_blank">📍 الموقع</a></div>
+
+  </div>
+
+</section>
+
+<script>
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+}
+function toggleFav(btn){
+  btn.classList.toggle("active");
+  btn.innerHTML = btn.classList.contains("active") ? "♥" : "♡";
+}
+</script>
+
+</body>
+</html>
